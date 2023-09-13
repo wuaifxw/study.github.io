@@ -124,7 +124,9 @@
       {% if author.zhihu %}
         <li><a href="{{ author.zhihu }}"><i class="fab fa-zhihu" aria-hidden="true" style="color:blue"></i> 知乎</a></li>
       {% endif %}
-     
+     {% if author.CSDN %}
+        <li><a href="{{ author.CSDN }}"><i class="icon-csdn" aria-hidden="true" ></i> CSDN</a></li>
+      {% endif %}
 
 
     </ul>
