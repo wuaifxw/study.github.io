@@ -118,9 +118,15 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
-      {% if author.orcid %}
-        <li><a href="{{ author.gitlab }}"><i class="fab fa-gitlab"></i> ORCID</a></li>
+      {% if author.gitlab %}
+        <li><a href="{{ author.gitlab }}"><i class="fab fa-gitlab" aria-hidden="true"></i>gitlab</a></li>
       {% endif %}
+{% if author.zhihu %}
+        <li><a href="{{ author.zhihu }}"><i class="fab fa-zhihu" aria-hidden="true"></i> 知乎</a></li>
+      {% endif %}
+     
+
+
     </ul>
   </div>
 </div>
